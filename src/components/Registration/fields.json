@@ -1,0 +1,100 @@
+[
+  {
+    "name": "email",
+    "label": "Email",
+    "type": "text",
+    "required": true
+  },
+  {
+    "name": "name",
+    "label": "Имя ",
+    "type": "text",
+    "required": true
+  },
+  {
+    "name": "phone",
+    "label": "Телефон",
+    "type": "text",
+    "required": true
+  },
+  {
+    "name": "password",
+    "label": "Пароль",
+    "type": "text",
+    "required": true
+  },
+  {
+    "name": "password",
+    "label": "Password",
+    "type": "password",
+    "required": true
+  },
+  {
+    "name": "social",
+    "label": "Telegram/Skype",
+    "type": "text",
+    "required": true
+  },
+  {
+    "name": "traffic",
+    "label": "Источник трафика",
+    "type": "select",
+    "options": [
+      {
+        "value": "1",
+        "label": "Вебсайт"
+      },
+      {
+        "value": "2",
+        "label": "Тизерные сети"
+      },
+      {
+        "value": "3",
+        "label": "Контекстная реклама"
+      },
+      {
+        "value": "4",
+        "label": "Группы/сообщества в соцсетях"
+      },
+      {
+        "value": "от 100+",
+        "label": "от 100+"
+      }
+    ],
+    "required": true
+  },
+  {
+    "name": "lid",
+    "label": "Количество лидов",
+    "type": "select",
+    "options": [
+      {
+        "value": "1",
+        "label": "нет опыта"
+      },
+      {
+        "value": "2",
+        "label": "от 1-10"
+      },
+      {
+        "value": "3",
+        "label": "от 20-50"
+      },
+      {
+        "value": "4",
+        "label": "от 50- 100"
+      },
+      {
+        "value": "5",
+        "label": "от 100+"
+      }
+    ],
+    "required": true
+  },
+  {
+    "name": "remember",
+    "label": "Я уже прочитал",
+    "type": "checkbox",
+    "required": true
+  }
+]

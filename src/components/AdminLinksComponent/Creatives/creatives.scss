@@ -1,0 +1,296 @@
+
+.dashboardCreativesSection {
+  $black: #222;
+
+  .dashboardCreativesMain {
+    background: #FFFFFF;
+    border: 1px solid rgba(63, 63, 68, 0.005);
+    box-shadow: 0px 1px 0px rgba(63, 63, 68, 0.05), 0px 1px 3px rgba(63, 63, 68, 0.15);
+    border-radius: 4px;
+    margin: 15px;
+    padding: 25px;
+
+    .creativeMainHeaderFlex {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 100%;
+
+      .title {
+        font-family: 'Roboto-Medium', sans-serif;
+        font-size: 21px;
+        line-height: 20px;
+        letter-spacing: -0.0571429px;
+        color: #3A3B3F;
+      }
+    }
+
+    .creativeMainHeaderFlex2 {
+      display: flex;
+      align-items: center;
+      height: 100%;
+
+      .item {
+        margin-right: 20px;
+      }
+
+      select {
+        font-family: 'Roboto-Regular', sans-serif;
+        font-size: 14px;
+        text-align: center;
+        letter-spacing: 1.25px;
+        color: #757575;
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14);
+        border-radius: 4px;
+        padding: 10px;
+        background: #E8EBFF;
+        border: none;
+
+        &:hover {
+          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.14);
+        }
+
+        &:focus {
+          outline: none
+        }
+      }
+    }
+  }
+}
+
+.creativeGalleryGridContainer {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  grid-gap: 20px;
+
+  .creativeGalleryGridItem {
+    position: relative;
+
+    .creativeGalleryImgSearch {
+      width: 70px;
+    }
+
+    .creativeGalleryImg {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .creativeGalleryBack {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, rgba(6, 115, 235, 0.86) 0%, rgba(114, 71, 193, 0.86) 100%);
+      opacity: 0;
+      transition: .3s;
+    }
+
+    .galleryTexts {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      color: #ffffff;
+      transition: .3s;
+      opacity: 0;
+      text-align: center;
+      font-size: 16px;
+      font-family: 'Roboto-Regular', sans-serif;
+      z-index: 1;
+    }
+
+    &:hover {
+      cursor: pointer;
+
+      .creativeGalleryBack {
+        opacity: .9;
+      }
+
+      .galleryTexts {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+
+@media (min-width: 1500px) {
+
+}
+
+@media (max-width: 1500px) and (min-width: 1200px) {
+
+}
+
+@media (max-width: 1200px) and (min-width: 992px) {
+  .creativeGalleryGridContainer {
+    grid-template-columns: auto auto auto;
+  }
+  .dashboardCreativesSection {
+    .gallery-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .dashboardCreativesMain .creativeMainHeaderFlex {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start !important;
+
+      .site-button {
+        margin-top: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) and (min-width: 765px) {
+  .creativeGalleryGridContainer {
+    grid-template-columns: auto auto auto;
+  }
+  .dashboardCreativesSection {
+    .gallery-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .dashboardCreativesMain .creativeMainHeaderFlex {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start !important;
+
+      .site-button {
+        margin-top: 20px;
+      }
+    }
+  }
+}
+
+.dashboardContentFormColTwo{
+  .formColTwoImgContent{
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(270deg, #7347c1 0%, #0674ec 100%);
+    .formColTwoImgContentSub{
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      align-items: center;
+    }
+    .formColTwoImgContentText{
+      color: #fefefc;
+      font-size: 16px;
+      font-weight: 400;
+    }
+  }
+  .formColTwoImg{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+
+  .formFileContent{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-top: 25px;
+    label{
+      border-radius: 50px;
+      color: #fefefc;
+      font-size: 16px;
+      font-weight: 700;
+      display: table;
+      padding: 10px 15px;
+      background: linear-gradient(270deg, #7347c1 0%, #0674ec 100%);
+      cursor: pointer;
+    }
+    input[type="file"] {
+      display: none;
+    }
+  }
+}
+@media (max-width: 765px) and (min-width: 576px) {
+  .creativeGalleryGridContainer {
+    grid-template-columns: auto auto;
+  }
+  .dashboardCreativesSection {
+    .gallery-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .dashboardCreativesMain {
+      .creativeMainHeaderFlex {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start !important;
+
+        .site-button {
+          margin-top: 20px;
+        }
+      }
+
+      .creativeMainHeaderFlex2 {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start !important;
+
+        .item {
+          width: 100%;
+
+          select {
+            width: 100%;
+            margin-top: 20px;
+          }
+        }
+      }
+
+      .creativeMainHeaderFlexSUB {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 576px) and (min-width: 320px) {
+  .creativeGalleryGridContainer {
+    grid-template-columns: auto;
+  }
+  .dashboardCreativesSection {
+    .gallery-grid {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    .dashboardCreativesMain {
+      .creativeMainHeaderFlex {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start !important;
+
+        .site-button {
+          margin-top: 20px;
+        }
+      }
+
+      .creativeMainHeaderFlex2 {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start !important;
+
+        .item {
+          width: 100%;
+
+          select {
+            width: 100%;
+            margin-top: 20px;
+          }
+        }
+      }
+
+      .creativeMainHeaderFlexSUB {
+        width: 100%;
+      }
+    }
+  }
+}

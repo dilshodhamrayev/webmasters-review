@@ -1,0 +1,219 @@
+.dashboardFinanceSection{
+  input.finance-date{
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 1.25px;
+    color: #66788A;
+    padding: 10px;
+    background: #FAFAFA;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.12), 0px 1px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.32);
+    width: 200px;
+    margin-right: 20px;
+    &:focus{
+      outline: none;
+    }
+  }
+  .streamsTableDomains {
+    background: #FFFFFF;
+    border: 1px solid rgba(63, 63, 68, 0.005);
+    box-shadow: 0px 1px 0px rgba(63, 63, 68, 0.05), 0px 1px 3px rgba(63, 63, 68, 0.15);
+    border-radius: 4px;
+    margin-top: 25px;
+
+    .streamsTableInfo {
+      padding: 20px 25px;
+
+      &.empty-table {
+        padding: 0 0 25px 10px;
+        font-size: 18px;
+        line-height: 20px;
+        letter-spacing: -0.0571429px;
+        color: #66788A;
+      }
+
+      .streamsTableSub {
+        display: flex;
+        align-items: center;
+        height: 100%;
+
+        .title {
+          font-size: 21px;
+          color: #3A3B3F;
+          font-family: 'Roboto-Medium', sans-serif;
+        }
+
+        .number {
+          background: #4099FF;
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          margin-right: 50px;
+        }
+
+        .numberSub {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100%;
+          width: 100%;
+          font-size: 16px;
+          text-align: center;
+          color: #FFFFFF;
+          border-radius: 50%;
+        }
+
+        .stream_archive {
+          font-size: 21px;
+          line-height: 20px;
+          color: #BBBBBB;
+        }
+      }
+    }
+  }
+  table {
+    box-sizing: border-box;
+    box-shadow: 0px 1px 3px rgba(63, 63, 68, 0.15);
+    border-radius: 4px;
+    margin-bottom: 0;
+    thead {
+      th {
+        font-family: 'Roboto-Medium', sans-serif;
+        text-align: left;
+        border: 0;
+        font-size: 16px;
+        color: #4099FF;
+      }
+    }
+
+    tbody {
+      tr {
+        text-align: left;
+
+        td {
+          font-size: 14px;
+          line-height: 20px;
+          letter-spacing: -0.05px;
+          color: #3A3B3F;
+
+          a {
+            color: #4099FF;
+          }
+
+          &.statistics {
+          }
+
+          &.actions {
+            display: flex;
+            justify-content: space-around;
+          }
+        }
+      }
+    }
+
+    .table-responsive-Body {
+      tr {
+        &:hover {
+          background: #F6F9FD;
+        }
+      }
+    }
+  }
+
+  .red-block{
+    background: #FF5370;
+  }
+  .blue-block{
+    background: #4099FF;
+  }
+  .green-block{
+    background: #2ED8B6;
+  }
+  .orange-block{
+    background: #FFB64D;
+  }
+  .darkBlue-block{
+    background: #6F42C1;
+  }
+  .darkGreen-block{
+    background: #17A2B8;
+  }
+
+  .dash-block{
+    padding: 20px 19px;
+    border-radius: 4px;
+    width: 23%;
+    margin: 20px 1%;
+    color:#fff;
+    border: 1px solid rgba(63, 63, 68, 0.005);
+    box-shadow: 0px 1px 0px rgba(63, 63, 68, 0.05), 0px 1px 3px rgba(63, 63, 68, 0.15);
+    span.title{
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 16px;
+      letter-spacing: 0.996px;
+      text-transform: uppercase;
+    }
+    p{
+      font-size: 12px;
+      line-height: 14px;
+      letter-spacing: -0.0428571px;
+    }
+  }
+}
+.coloured-blocks{
+  margin-bottom: 40px;
+  .dash-block{
+    width: 32%;
+    margin:25px 0 0px 0;
+    img{
+      margin-right: 15px;
+    }
+    p{
+      padding-bottom: 10px;
+      &.d-flex.align-items-center.text{
+        padding:5px 0 5px 10px;
+        img{
+          margin-right: 25px;
+        }
+        span.number{
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1500px){
+
+}
+@media (max-width: 1500px) and (min-width: 1200px){
+
+}
+@media (max-width: 1200px) and (min-width: 992px){
+  .dashboardFinanceSection .dash-block{
+    width:48%;
+  }
+}
+@media (max-width: 992px) and (min-width: 765px){
+  .dashboardFinanceSection .dash-block{
+    width:48%;
+  }
+}
+@media (max-width: 765px) and (min-width: 576px){
+  .dashboardFinanceSection .dash-block{
+    width:80%;
+    margin:20px auto;
+  }
+}
+@media only screen and (max-width: 576px) and (min-width: 320px){
+  .dashboardFinanceSection .finance-date-flex{
+    flex-direction: column;
+    align-items: flex-start!important;
+  }
+  .dashboardFinanceSection .dash-block{
+    width:100%;
+  }
+}

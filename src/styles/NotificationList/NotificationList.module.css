@@ -1,0 +1,54 @@
+.notifications_list {
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px 0 rgb(0 0 0 / 12%);
+  height: 446.8px;
+  overflow: hidden;
+  position: absolute;
+  background-color: white;
+  bottom: -441px;
+  left: -406px;
+  z-index: 200;
+  overflow-y: auto;
+}
+
+.notification {
+  padding: 1rem;
+  background-color: white;
+  display: flex;
+  align-items: flex-start;
+  cursor: pointer;
+}
+
+.notification:not(:last-child) {
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.title {
+  font-weight: bold;
+}
+
+.notification:hover {
+  background-color: #007bff36;
+}
+
+.content_one {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.content_one .text p {
+  width: 250px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.content_one svg {
+  color: #ffce48;
+  margin-right: 1rem;
+}
+
+.content_two {
+  color: grey;
+}

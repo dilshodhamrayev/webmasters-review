@@ -1,0 +1,86 @@
+.dashboardInstrumentsSection {
+  .streams.instruments {
+    background-color: transparent;
+    box-shadow: unset;
+    display: flex;
+    border: 0;
+    flex-wrap: wrap;
+  }
+
+  .streams.instruments .ins {
+    max-width: 250px;
+    background: #FCFCFC;
+    border: 1px solid rgba(63, 63, 68, 0.005);
+    box-shadow: 0px 1px 0px rgba(63, 63, 68, 0.05), 0px 0px 10px rgba(63, 63, 68, 0.22);
+    border-radius: 4px;
+    text-align: center;
+    padding: 30px 15px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+
+  .streams.instruments .ins h3 {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #212B36;
+    padding: 10px 0 15px 0;
+  }
+
+  .streams.instruments .ins p {
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #3A3B3F;
+    padding: 0;
+  }
+
+  .streams.instruments .ins a {
+    padding: 5px 30px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 767px) {
+  .dashboardInstrumentsSection {
+    .streams.instruments {
+      justify-content: center;
+    }
+
+    .streams.instruments .ins {
+      margin: 30px auto;
+      max-width: 100%!important;
+    }
+  }
+}
+.modalBodyText1 {
+  font-size: 1.2rem;
+  color: #007bff;
+}
+.modalBodyText2 {
+  font-size: 1.1rem;
+  font-family: 'Roboto-Medium', sans-serif;
+}
+.modalBodyText3 {
+  font-size: 1.1rem;
+  font-family: 'Roboto-Medium', sans-serif;
+}
+.tbodyModal {
+  tr {
+
+    th {
+      padding: 1rem;
+      border: 1px solid #dee2e6;
+      border-spacing: 2px;
+    }
+    td {
+      padding: 1rem;
+      border: 1px solid #dee2e6;
+      border-spacing: 2px;
+    }
+  }
+}
+

@@ -1,0 +1,7 @@
+.overflow_inputs {
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 60vh;
+  padding: 1rem 10px;
+  margin: 0 -10px;
+}

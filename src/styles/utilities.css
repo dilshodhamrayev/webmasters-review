@@ -1,0 +1,60 @@
+:root {
+  --primary-color: #007bff;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+  transition: all 0.3s;
+  cursor: grab;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #0674ec;
+  border-radius: 8px;
+  transition: all 0.3s;
+  cursor: grab;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #459fff;
+}
+
+/* FORM */
+.input_field_error {
+  padding-left: 0.8rem;
+}
+
+/* LINKS */
+a {
+  text-decoration: none;
+  color: #0674ec;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.blue_circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  color: white;
+  display: inline-block;
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 560px) {
+  ::-webkit-scrollbar {
+    width: 3px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #00000042;
+  }
+}

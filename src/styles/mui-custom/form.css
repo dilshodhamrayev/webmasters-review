@@ -1,0 +1,8 @@
+.MuiInputBase-root.MuiOutlinedInput-root,
+.MuiSelect-root.MuiSelect-outlined {
+  border-radius: 60px !important;
+}
+
+.MuiSelect-select:focus {
+  background-color: transparent;
+}

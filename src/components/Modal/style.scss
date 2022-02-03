@@ -1,0 +1,21 @@
+.modal {
+  width: 80%;
+  height: 100%;
+  display: block;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 500;
+  transition: all 0.5s ease-in-out;
+}
+.none-modal {
+  display: none;
+}
+@media screen and (max-width: 414px) {
+  .modal {
+    overflow: scroll;
+  }
+}
+
+// ----------

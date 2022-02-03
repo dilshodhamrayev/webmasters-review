@@ -1,0 +1,273 @@
+.dashboardMyStreamsSection {
+  .streamsTable {
+    background: #FFFFFF;
+    border: 1px solid rgba(63, 63, 68, 0.005);
+    box-shadow: 0px 1px 0px rgba(63, 63, 68, 0.05), 0px 1px 3px rgba(63, 63, 68, 0.15);
+    border-radius: 4px;
+    margin-top: 25px;
+
+    .creativeMainHeaderFlex2 {
+      display: flex;
+      align-items: center;
+      height: 100%;
+
+      .item {
+        margin-right: 10px;
+      }
+      .item2 {
+        margin-right: 30px;
+      }
+
+      select {
+        font-family: 'Roboto-Regular', sans-serif;
+        font-size: 14px;
+        text-align: center;
+        letter-spacing: 1.25px;
+        color: #757575;
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14);
+        border-radius: 4px;
+        padding: 10px;
+        background: #E8EBFF;
+        border: none;
+
+        &:hover {
+          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.14);
+        }
+
+        &:focus {
+          outline: none
+        }
+      }
+    }
+    .streamsTableInfo {
+      padding: 20px 25px;
+
+      &.empty-table {
+        padding: 0 0 25px 10px;
+        font-size: 18px;
+        line-height: 20px;
+        letter-spacing: -0.0571429px;
+        color: #66788A;
+      }
+
+      .streamsTableSub {
+        display: flex;
+        align-items: center;
+        height: 100%;
+
+        .title {
+          font-size: 21px;
+          color: #3A3B3F;
+          font-family: 'Roboto-Medium', sans-serif;
+        }
+
+        .number {
+          background: #4099FF;
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          margin-right: 50px;
+        }
+
+        .numberSub {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100%;
+          width: 100%;
+          font-size: 16px;
+          text-align: center;
+          color: #FFFFFF;
+          border-radius: 50%;
+        }
+
+        .stream_archive {
+          font-size: 21px;
+          line-height: 20px;
+          color: #BBBBBB;
+        }
+      }
+    }
+  }
+
+  table {
+    box-sizing: border-box;
+    margin-bottom: 0!important;
+    thead {
+      th {
+        font-family: 'Roboto-Medium', sans-serif;
+        text-align: left;
+        border: 0;
+        font-size: 16px;
+        color: #4099FF;
+      }
+    }
+
+    tbody {
+      box-shadow: 0px 1px 3px rgba(63, 63, 68, 0.15);
+      border-radius: 4px;
+      tr {
+        text-align: left;
+
+        td {
+          font-size: 14px;
+          line-height: 20px;
+          letter-spacing: -0.05px;
+          color: #3A3B3F;
+
+          a {
+            color: #4099FF;
+          }
+
+          &.statistics {
+          }
+
+          &.actions {
+            display: flex;
+            justify-content: space-around;
+          }
+        }
+      }
+    }
+
+    .table-responsive-Body {
+      tr {
+        &:hover {
+          background: #F6F9FD;
+        }
+      }
+    }
+  }
+}
+
+.acceptedTable{
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #47B881;
+}
+.waitingTable{
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #F7D154;
+}
+.cancellationTable{
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #EC4C47;
+}
+.renouncementTable{
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #4099FF;
+}
+@media (min-width: 1500px) {
+
+}
+
+@media (max-width: 1500px) and (min-width: 1200px) {
+
+}
+
+@media (max-width: 1200px) and (min-width: 992px) {
+
+}
+
+@media (max-width: 992px) and (min-width: 765px) {
+
+}
+
+@media (max-width: 765px) and (min-width: 576px) {
+  .dashboardMyStreamsSection {
+    .streamsTable {
+      .streamsTableInfo {
+        flex-direction: column;
+        justify-content: flex-start !important;
+        align-items: flex-start !important;
+
+        button {
+          margin-top: 20px;
+        }
+
+        .streamsTableSub {
+          justify-content: flex-start !important;
+
+          .number {
+            margin-right: 10px;
+            width: 40px;
+            height: 40px;
+          }
+
+          .stream_archive {
+            font-size: 16px;
+          }
+
+          .title {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 576px) and (min-width: 320px) {
+  .dashboardMyStreamsSection {
+    .streamsTable {
+      .streamsTableInfo {
+        flex-direction: column;
+        justify-content: flex-start !important;
+        align-items: flex-start !important;
+
+        button {
+          margin-top: 20px;
+        }
+
+        .streamsTableSub {
+          justify-content: flex-start !important;
+
+          .number {
+            margin-right: 10px;
+            width: 40px;
+            height: 40px;
+          }
+
+          .stream_archive {
+            font-size: 16px;
+          }
+
+          .title {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.table-responsive table th {
+  font-family: 'Roboto-Medium', sans-serif;
+    text-align: left;
+    border: 0;
+    font-size: 16px;
+    color: #4099FF;
+}
+.customized-select select{
+    background: rgba(102, 120, 138, 0.08);
+    border: 1px solid #bbbbbb;
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 16px;
+    color: #757575;
+    min-width: 50px;
+    margin-right: 10px;
+    padding: 5px 10px;
+    margin-bottom: 0px;
+}

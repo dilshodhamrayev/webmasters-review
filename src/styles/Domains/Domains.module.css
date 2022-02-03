@@ -1,0 +1,31 @@
+.cursor_pointer {
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.cursor_pointer:hover {
+  transform: rotate(8deg);
+}
+
+.status {
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.header,
+.header_content_one {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header {
+  margin-bottom: 2rem;
+}
+
+.header h3 {
+  margin-right: 1rem;
+}

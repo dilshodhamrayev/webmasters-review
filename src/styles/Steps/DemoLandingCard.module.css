@@ -1,0 +1,36 @@
+.demo_img_wrapper {
+  height: 300px;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.actions_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.backdrop {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: #000000a2;
+  opacity: 0;
+  transition: all 0.3s;
+  height: auto;
+}
+
+.actions_wrapper button {
+  margin: 0.5rem;
+}
+
+.landing_card:hover .backdrop {
+  opacity: 1;
+}

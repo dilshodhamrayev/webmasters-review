@@ -1,0 +1,163 @@
+.dashboardNewApplicationSection {
+  padding: 2rem;
+  .dashboardMainFormSection {
+    .dashboardMainFormSectionCard {
+      border: 1px solid rgba(63, 63, 68, 0.005);
+      box-shadow: 0px 1px 0px rgba(63, 63, 68, 0.05),
+        0px 1px 3px rgba(63, 63, 68, 0.15);
+
+      .form-group {
+        margin-bottom: 0rem;
+      }
+
+      .formGroup1 {
+        padding: 23px;
+        border-bottom: 1px solid #e4e7eb;
+
+        select {
+          font-size: 16px;
+          letter-spacing: 0.15px;
+          color: rgba(0, 0, 0, 0.6);
+          font-family: "Roboto-Regular", sans-serif;
+          border: 1px solid rgba(0, 0, 0, 0.32);
+          box-sizing: border-box;
+          border-radius: 50px;
+          padding: 16px;
+
+          &:focus {
+            outline: none;
+          }
+        }
+      }
+
+      .formGroup2 {
+        padding: 23px;
+        border-bottom: 1px solid #e4e7eb;
+
+        .formGroup2Title {
+          font-size: 16px;
+          letter-spacing: -0.05px;
+          color: #3a3b3f;
+          font-family: "Roboto-Medium", sans-serif;
+        }
+
+        .formGroup2Text {
+          font-weight: 300;
+          font-size: 14px;
+          color: #66788a;
+          font-family: "Roboto-Light", sans-serif;
+        }
+
+        input,
+        select,
+        textarea {
+          border: 1px solid rgba(0, 0, 0, 0.32);
+          box-sizing: border-box;
+          border-radius: 4px;
+          font-size: 16px;
+          letter-spacing: 0.15px;
+          color: rgba(0, 0, 0, 0.6);
+          font-family: "Roboto-Regular", sans-serif;
+          border: 1px solid rgba(0, 0, 0, 0.32);
+
+          &:focus {
+            outline: none;
+          }
+        }
+
+        select,
+        textarea {
+          padding: 16px;
+        }
+
+        .form-control {
+          padding: 0.905rem 1.2rem !important;
+          height: calc(2.6em + 0.75rem + 2px);
+
+          &:focus {
+            outline: none;
+            box-shadow: none;
+            border: 1px solid #d4d7db;
+          }
+        }
+
+        .waiting {
+          font-weight: 300;
+          font-size: 14px;
+          line-height: 16px;
+          color: #66788a;
+          padding: 0;
+
+          input {
+            padding: 5px 10px;
+            border: 1px solid rgba(0, 0, 0, 0.32);
+            box-sizing: border-box;
+            border-radius: 4px;
+            margin: 0 10px;
+
+            &[type="text"] {
+              width: 75px;
+            }
+          }
+        }
+
+        .switchToggleMain {
+          font-size: 14px;
+          letter-spacing: 0.15px;
+          font-family: "Roboto-Light", sans-serif;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1500px) {
+}
+
+@media (max-width: 1500px) and (min-width: 1200px) {
+}
+
+@media (max-width: 1200px) and (min-width: 992px) {
+}
+
+@media (max-width: 992px) and (min-width: 765px) {
+}
+
+@media (max-width: 765px) and (min-width: 576px) {
+  .dashboardNewApplicationSection {
+    .dashboardMainFormSection {
+      .dashboardMainFormSectionCard {
+        .formGroup2 {
+          .waiting {
+            span {
+              display: block;
+              text-align: center;
+              margin-top: 5px;
+              margin-bottom: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 576px) and (min-width: 320px) {
+  .dashboardNewApplicationSection {
+    padding: 1rem;
+    .dashboardMainFormSection {
+      .dashboardMainFormSectionCard {
+        .formGroup2 {
+          .waiting {
+            span {
+              display: block;
+              text-align: center;
+              margin-top: 5px;
+              margin-bottom: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

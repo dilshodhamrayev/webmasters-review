@@ -1,0 +1,715 @@
+//Dashboard Main start
+.dashboardMainCarousel {
+  .slick-prev, .slick-next {
+    display: none !important;
+  }
+
+  .slick-dots {
+    bottom: 15px;
+  }
+
+  .slick-slider:focus {
+    outline: unset !important;
+    border: none !important;
+  }
+
+  .slick-dots li.slick-active button:before {
+    opacity: 1;
+    color: #fff;
+    font-size: 12px;
+  }
+
+  .slick-dots li button:before {
+    opacity: .55;
+    color: #fff;
+    font-size: 12px;
+  }
+
+  .slick-dots li {
+    margin: 0;
+  }
+
+  .fistCarousel {
+    height: 284px;
+    width: 100%;
+    position: relative;
+
+    .fistCarouselImg {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .fistCarouselBack {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, #0673EB 0%, #7247C1 100%);
+      mix-blend-mode: hard-light;
+    }
+
+    .carouselInfo {
+      position: absolute;
+      bottom: 44px;
+      left: 48px;
+
+      .carouselTitle {
+        font-family: 'Roboto-Medium', sans-serif;
+        font-size: 80px;
+        letter-spacing: -0.0555556px;
+        color: #FFFFFF;
+      }
+
+      .carouselBtn {
+        font-family: 'Roboto-Medium', sans-serif;
+        font-size: 10px;
+        width: 100px;
+        text-align: center;
+        letter-spacing: 0.3px;
+        text-transform: uppercase;
+        color: #0C24B5;
+        background: #FFFFFF;
+        border-radius: 11.7776px;
+        border: none;
+        padding: 6px 15px;
+
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+  }
+
+}
+
+.dashboardMain {
+  .blueBanner {
+    background: linear-gradient(270deg, #7347C1 0%, #0674EC 100%);
+    border-radius: 54px;
+
+    .blueBanner {
+      font-family: 'Roboto-Regular', sans-serif;
+      font-size: 104px;
+      text-align: center;
+      color: #FFFFFF;
+      padding-top: 62px;
+      padding-bottom: 62px;
+    }
+  }
+}
+
+.dashboardCardStatistics {
+  .red-block {
+    background: #FF5370;
+  }
+
+  .blue-block {
+    background: #4099FF;
+  }
+
+  .green-block {
+    background: #2ED8B6;
+  }
+
+  .orange-block {
+    background: #FFB64D;
+  }
+
+  .dash-block {
+    padding: 20px 19px;
+    border-radius: 4px;
+    color: #fff;
+    border: 1px solid rgba(63, 63, 68, 0.005);
+    box-shadow: 0px 1px 0px rgba(63, 63, 68, 0.05), 0px 1px 3px rgba(63, 63, 68, 0.15);
+
+    span.title {
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 16px;
+      letter-spacing: 0.996px;
+      text-transform: uppercase;
+    }
+
+    p {
+      font-size: 12px;
+      line-height: 14px;
+      letter-spacing: -0.0428571px;
+    }
+  }
+
+  .dash-block {
+    width: 23%;
+    margin: 25px 0px 0px 0px;
+
+    p {
+      &.d-flex.align-items-center.text {
+        padding: 5px 0 5px 10px;
+
+        img {
+          margin-right: 25px;
+        }
+
+        span.number {
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
+
+
+.dashboardGridCards {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 30px;
+
+  .dashboardGridCardItems {
+    border-radius: 10px;
+
+    .gridCardItemsRow {
+      display: flex;
+
+      .gridCardItemsCol1 {
+        width: 35%;
+      }
+
+      .gridCardItemsCol2 {
+        width: 65%;
+        background: #ffffff;
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 10px;
+        box-shadow: 0px 1px 0px rgba(63, 63, 68, 0.05), 0px 1px 3px rgba(63, 63, 68, 0.15);
+
+        .gridCardItemsFlexInfos {
+          display: flex;
+          flex-direction: column;
+          padding: 23px;
+          width: 100%;
+          height: 100%;
+
+          .title {
+            font-family: 'Roboto-Medium', sans-serif;
+            font-size: 25px;
+            color: #3A3B3F;
+            text-align: left;
+          }
+
+          .date {
+            font-family: 'Roboto-Regular', sans-serif;
+            font-size: 14px;
+            color: #BBBBBB;
+            margin-top: 10px;
+          }
+
+          .description {
+            font-family: 'Roboto-Regular', sans-serif;
+            font-size: 14px;
+            color: #66788A;
+            margin-top: 10px;
+            text-align: left;
+          }
+        }
+      }
+    }
+
+
+    .gridCardItemsImg {
+      width: 100%;
+      height: 100%;
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+      object-fit: cover;
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+.dashboardGridCards2SubMain{
+  display: block;
+}
+.dashboardGridCards2 {
+  display: grid;
+  grid-template-columns: auto;
+
+  .dashboardGridCardItems {
+    border-radius: 10px;
+
+    .gridCardItemsRow {
+      display: flex;
+
+      .gridCardItemsCol1 {
+        width: 15%;
+      }
+
+      .gridCardItemsCol2 {
+        width: 85%;
+        background: #ffffff;
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 10px;
+        box-shadow: 0px 1px 0px rgba(63, 63, 68, 0.05), 0px 1px 3px rgba(63, 63, 68, 0.15);
+
+        .gridCardItemsFlexInfos22 {
+          display: flex;
+          padding: 23px;
+          width: 100%;
+          height: 100%;
+
+          .title {
+            font-family: 'Roboto-Medium', sans-serif;
+            font-size: 25px;
+            color: #3A3B3F;
+            text-align: left;
+          }
+
+          .date {
+            font-family: 'Roboto-Regular', sans-serif;
+            font-size: 14px;
+            color: #BBBBBB;
+            margin-top: 10px;
+          }
+
+          .description {
+            font-family: 'Roboto-Regular', sans-serif;
+            font-size: 14px;
+            color: #66788A;
+            margin-top: 10px;
+            text-align: left;
+          }
+          .gridCardItemsFlexInfos2Sub1{
+            margin-right: 20px;
+          }
+        }
+      }
+    }
+    .gridCardItemsImg2 {
+      width: 100%;
+      height: 100%;
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+      object-fit: cover;
+      display: flex;
+      align-items: center;
+    }
+
+    .dashboardGridCards2Sub {
+      display: grid;
+      grid-template-columns: auto auto auto auto auto auto;
+      padding-left: 23px;
+      padding-right: 23px;
+      grid-gap: 10px;
+      .dashboardGridCardItemsSub{
+        min-width: 100px;
+        border-right: 1px solid #E4E7EB;
+      }
+      .tegTitle{
+        font-family: "Roboto-Medium", sans-serif;
+        font-size: 18px;
+        line-height: 20px;
+        letter-spacing: -0.0571429px;
+
+        color: #3A3B3F;
+      }
+      .tegText{
+        margin-right: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        background: #E8EBFF;
+        border-radius: 20px;
+        padding: 4px 10px;
+        font-family: "Roboto-Regular", sans-serif;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+        letter-spacing: 0.5px;
+        color: #757575;
+        display: inline-block;
+      }
+    }
+  }
+}
+
+.gridCardItemsCol1hidden{
+  display: none;
+}
+.filterModalTitle{
+  font-family: 'Roboto-Medium',sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -0.05px;
+  color: #3A3B3F;
+
+}
+
+@media (min-width: 1500px) {
+
+}
+
+@media (max-width: 1500px) and (min-width: 1200px) {
+
+}
+
+@media (max-width: 1200px) and (min-width: 992px) {
+
+
+.dashboardGridCards2 {
+  .dashboardGridCardItems {
+    .gridCardItemsImg2 {
+      width: 100%;
+      height: 100%;
+    }
+    .dashboardGridCards2Sub {
+      grid-template-columns: auto auto auto;
+    }
+    .gridCardItemsRow {
+      flex-direction: column;
+      .gridCardItemsCol2 {
+        width: 100%;
+        .gridCardItemsFlexInfos22 {
+          flex-direction: column;
+        }
+      }
+      .gridCardItemsCol1{
+        display: none;
+      }
+    }
+  }
+  .gridCardItemsCol1hidden{
+    display: block;
+    .gridCardItemsImg2{
+      height: 200px;
+    }
+  }
+}
+  .dashboardGridCards {
+    .dashboardGridCardItems {
+      .gridCardItemsImg {
+        width: 100%;
+        height: 100%;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 0px;
+      }
+      .gridCardItemsRow {
+        flex-direction: column;
+        .gridCardItemsCol1 {
+          width: 100%;
+        }
+
+        .gridCardItemsCol2 {
+          width: 100%;
+          border-bottom-right-radius: 10px;
+          border-bottom-left-radius: 10px;
+          border-top-right-radius: 0px;
+          .gridCardItemsFlexInfos {
+            .title {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .dashboardMain {
+    .blueBanner {
+      .blueBanner {
+        font-size: 54px;
+        padding-top: 52px;
+        padding-bottom: 52px;
+      }
+    }
+  }
+
+  .dashboardCardStatistics .dash-block {
+    width: 48%;
+    margin: 20px 0 0 0;
+  }
+  .dashboardMainCarousel .fistCarousel .carouselInfo {
+    bottom: 74px;
+  }
+  .dashboardMainCarousel .fistCarousel .carouselInfo .carouselTitle {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 992px) and (min-width: 765px) {
+  .dashboardGridCards2 {
+    .dashboardGridCardItems {
+      .gridCardItemsImg2 {
+        width: 100%;
+        height: 100%;
+      }
+      .dashboardGridCards2Sub {
+        grid-template-columns: auto auto auto;
+      }
+      .gridCardItemsRow {
+        flex-direction: column;
+        .gridCardItemsCol2 {
+          width: 100%;
+          .gridCardItemsFlexInfos22 {
+            flex-direction: column;
+          }
+        }
+        .gridCardItemsCol1{
+          display: none;
+        }
+      }
+    }
+    .gridCardItemsCol1hidden{
+      display: block;
+      .gridCardItemsImg2{
+        height: 300px;
+      }
+    }
+  }
+  .dashboardGridCards {
+    .dashboardGridCardItems {
+      .gridCardItemsImg {
+        width: 100%;
+        height: 100%;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 0px;
+      }
+      .gridCardItemsRow {
+        flex-direction: column;
+        .gridCardItemsCol1 {
+          width: 100%;
+        }
+
+        .gridCardItemsCol2 {
+          width: 100%;
+          border-bottom-right-radius: 10px;
+          border-bottom-left-radius: 10px;
+          border-top-right-radius: 0px;
+          .gridCardItemsFlexInfos {
+            .title {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .dashboardMain {
+    .blueBanner {
+      .blueBanner {
+        font-size: 74px;
+        padding-top: 52px;
+        padding-bottom: 52px;
+      }
+    }
+  }
+
+  .dashboardCardStatistics .dash-block {
+    width: 48%;
+    margin: 20px 0 0 0;
+  }
+  .dashboardMainCarousel .fistCarousel .carouselInfo {
+    bottom: 74px;
+  }
+  .dashboardMainCarousel .fistCarousel .carouselInfo .carouselTitle {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 765px) and (min-width: 576px) {
+
+  .dashboardGridCards2 {
+    .dashboardGridCardItems {
+      .gridCardItemsImg2 {
+        width: 100%;
+        height: 100%;
+      }
+      .dashboardGridCards2Sub {
+        grid-template-columns: auto auto auto;
+      }
+      .gridCardItemsRow {
+        flex-direction: column;
+        .gridCardItemsCol2 {
+          width: 100%;
+          .gridCardItemsFlexInfos22 {
+            flex-direction: column;
+          }
+        }
+        .gridCardItemsCol1{
+          display: none;
+        }
+      }
+    }
+    .gridCardItemsCol1hidden{
+      display: block;
+      .gridCardItemsImg2{
+        height: 300px;
+      }
+    }
+  }
+  .dashboardGridCards {
+    .dashboardGridCardItems {
+      .gridCardItemsImg {
+        width: 100%;
+        height: 100%;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 0px;
+      }
+      .gridCardItemsRow {
+        flex-direction: column;
+        .gridCardItemsCol1 {
+          width: 100%;
+        }
+
+        .gridCardItemsCol2 {
+          width: 100%;
+          border-bottom-right-radius: 10px;
+          border-bottom-left-radius: 10px;
+          border-top-right-radius: 0px;
+          .gridCardItemsFlexInfos {
+            padding: 18px;
+            .title {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .dashboardMain {
+    .blueBanner {
+      .blueBanner {
+        font-size: 54px;
+        padding-top: 52px;
+        padding-bottom: 52px;
+      }
+    }
+  }
+
+  .dashboardCardStatistics .dash-block {
+    width: 100%;
+    margin: 20px auto;
+  }
+  .dashboardMainCarousel .fistCarousel .carouselInfo {
+    bottom: 74px;
+  }
+  .dashboardMainCarousel .fistCarousel .carouselInfo .carouselTitle {
+    font-size: 40px;
+  }
+  .dashboardMainCarousel .fistCarousel {
+    height: 200px;
+  }
+}
+
+@media only screen and (max-width: 576px) and (min-width: 320px) {
+
+  .dashboardGridCards2 {
+    .dashboardGridCardItems {
+      .gridCardItemsImg2 {
+        width: 100%;
+        height: 100%;
+      }
+      .dashboardGridCards2Sub {
+        grid-template-columns: auto;
+      }
+      .dashboardGridCardItemsSub{
+        border-right: none!important;
+      }
+      .gridCardItemsRow {
+        flex-direction: column;
+        .gridCardItemsCol2 {
+          width: 100%;
+          .gridCardItemsFlexInfos22 {
+            flex-direction: column;
+          }
+        }
+        .gridCardItemsCol1{
+          display: none;
+        }
+      }
+    }
+    .gridCardItemsCol1hidden{
+      display: block;
+      .gridCardItemsImg2{
+        height: 300px;
+      }
+    }
+  }
+  .dashboardGridCards {
+    grid-template-columns: auto;
+    .dashboardGridCardItems {
+      .gridCardItemsImg {
+        width: 100%;
+        height: 100%;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 0px;
+      }
+      .gridCardItemsRow {
+        flex-direction: column;
+        .gridCardItemsCol1 {
+          width: 100%;
+        }
+
+        .gridCardItemsCol2 {
+          width: 100%;
+          border-bottom-right-radius: 10px;
+          border-bottom-left-radius: 10px;
+          border-top-right-radius: 0px;
+          .gridCardItemsFlexInfos {
+            padding: 18px;
+            .title {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .MuiButton-text {
+    padding: 10px 0 !important;
+  }
+  .userByDeviceCardBottom {
+    padding: 10px 15px;
+  }
+  .userByDeviceCardBottom {
+    flex-direction: column;
+    align-items: flex-start !important;
+    justify-content: flex-start !important;
+    padding: 10px 15px;
+  }
+  .userByDeviceCardHeader {
+    flex-direction: column;
+    align-items: flex-start !important;
+    justify-content: flex-start !important;
+    padding: 10px 15px;
+  }
+
+  .dashboardMain {
+    .blueBanner {
+      .blueBanner {
+        font-size: 30px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+      }
+    }
+  }
+  .dashboardCardStatistics .dash-block {
+    width: 100%;
+    margin: 25px 0 0 0;
+  }
+  .dashboardMainCarousel .fistCarousel .carouselInfo {
+    bottom: 44px;
+    left: 18px;
+  }
+  .dashboardMainCarousel .fistCarousel .carouselInfo .carouselTitle {
+    font-size: 22px;
+  }
+  .dashboardMainCarousel .fistCarousel {
+    height: 150px;
+  }
+}
+
+//Dashboard Main end
